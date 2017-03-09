@@ -18,4 +18,11 @@ def ucln array
   return uc.last
 end
 
-puts ucln([8,12,16])
+def bcnn array
+  tich = 1
+  array.each do |x|
+    tich = tich*x
+  end
+  return bcnn = tich/ucln(array)
+end
+puts bcnn([8,12,16])
