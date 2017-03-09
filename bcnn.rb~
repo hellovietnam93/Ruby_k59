@@ -20,5 +20,5 @@ def bcnn_of_array array
 	return result
 end
 
-array = [5,6,48]
+array = [5,6,30]
 puts bcnn_of_array array
