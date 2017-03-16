@@ -3,7 +3,11 @@
 one:
   name: MyString
   email: MyString
+  phone_number: MyString
+  birthday: 2017-03-16
 
 two:
   name: MyString
   email: MyString
+  phone_number: MyString
+  birthday: 2017-03-16
