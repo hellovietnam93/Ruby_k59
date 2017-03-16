@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= full_title yield :title %></title>
+    <title>UserModel</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,10 +9,6 @@
   </head>
 
   <body>
-  	<%= render "layouts/header" %>
-  	<div class="container">
-  		 <%= yield %>
-  	</div>
-   
+    <%= yield %>
   </body>
 </html>
