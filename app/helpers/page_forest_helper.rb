@@ -1,0 +1,2 @@
+module PageForestHelper
+end
