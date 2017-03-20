@@ -1,6 +1,9 @@
 *.gem
 *.rbc
 /.config
+/config/secrets.yml
+/config/database.yml
+/log/
 /coverage/
 /InstalledFiles
 /pkg/
