@@ -1,14 +1,12 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<section class="user_info">
+  <h1 class="col-lg-12 text-center">
+    <%= gravatar_for @user %>
+    <%= @user.name %>
+  </h1>
+  <p class="col-lg-12 text-center">
+    <%= "Email: " + @user.email %>
+  </p>
+  <p class="col-lg-12 text-center">
+    <%= "Created at: " + @user.created_at.to_s %>
+  </p>
+</section>
