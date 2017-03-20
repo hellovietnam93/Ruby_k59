@@ -40,6 +40,15 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (7.1.4)
+<<<<<<< HEAD
+=======
+    autoprefixer-rails (6.7.7)
+      execjs
+    bcrypt (3.1.11)
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+>>>>>>> Complete home + sign up
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -126,6 +135,13 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.0.2)
       sprockets-rails (>= 2.0.0)
+<<<<<<< HEAD
+=======
+    rails-controller-testing (1.0.1)
+      actionpack (~> 5.x)
+      actionview (~> 5.x)
+      activesupport (~> 5.x)
+>>>>>>> Complete home + sign up
     rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6)
@@ -172,7 +188,11 @@ GEM
     turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+<<<<<<< HEAD
     uglifier (3.1.7)
+=======
+    uglifier (3.1.8)
+>>>>>>> Complete home + sign up
       execjs (>= 0.3.0, < 3)
     web-console (3.4.0)
       actionview (>= 5.0)
@@ -187,6 +207,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.11)
+  bootstrap-sass (= 3.3.6)
   byebug
   coffee-rails (~> 4.2)
   guard (= 2.13.0)
@@ -197,6 +219,7 @@ DEPENDENCIES
   minitest-reporters (= 1.1.9)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
+  rails-controller-testing
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
