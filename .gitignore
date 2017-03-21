@@ -19,6 +19,6 @@
 
 # Ignore Byebug command history file.
 .byebug_history
- 
+
 /config/locales/database.yml.example
 /config/locales/secrets.yml
