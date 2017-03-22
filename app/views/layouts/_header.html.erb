@@ -1,12 +1,35 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<div class="brand">My First Web</div>
+<div class="address-bar">HUST | DAI CO VIET | 123.456.7890</div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
   <div class="container">
-    <%= link_to "sample app","#",id:"logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home","/" %></li>
-        <li><%= link_to "Help","/help" %></li>
-        <li><%= link_to "Log in","#" %></li>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/help">Help</a>
+        </li>
+        <li>
+          <a href="/users">All users</a>
+        </li>
+        <li>
+          <a href="/signup">Sign up</a>
+        </li>
+        <% if logged_in? %>
+          <li><%= link_to "Current user", current_user %></li>
+
+          <li>
+            <%= link_to "Log out", logout_path, method: :delete %>
+          </li>
+        <% else %>
+          <li><%= link_to "Log in", login_path %></li>
+        <% end %>
       </ul>
-    </nav>
+    </div>
+    <!-- /.navbar-collapse -->
   </div>
-</header>
+  <!-- /.container -->
+</nav>
