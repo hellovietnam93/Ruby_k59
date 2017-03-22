@@ -50,3 +50,7 @@ build-iPhoneSimulator/
 .rvmrc
 
 /log/*
+/temp/*
+/log/development.log
+config/secrets.yml
+config/database.yml
