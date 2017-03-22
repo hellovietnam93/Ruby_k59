@@ -15,7 +15,7 @@ class User < ApplicationRecord
   private
 
   def check_phonenumber
-    if self.phonenumber && self.phonenumber[0] != '0'
+    if self.phonenumber && self.phonenumber[0] != "0"
       self.errors.add :phonenumber,"Must begin with 0"
     end
     if self.phonenumber && self.phonenumber.length != 10
@@ -26,7 +26,7 @@ class User < ApplicationRecord
   def check_birthday
     if self.birthday &&
       (self.birthday.year < Time.now.year - 90 ||
-        self.birthday.year > Time.now.year -7)
+        self.birthday.year > Time.now.year - 7)
       self.errors.add :birthday, "Year must from 90 years ago to 7 years ago"
     end
   end
